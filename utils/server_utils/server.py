@@ -122,4 +122,4 @@ def start_model_server(model_config_path):
     def answer():
         return interact(model, model_args_names)
 
-    app.run(host=host, port=port)
+    app.run(host=host, port=port, threaded=False)
